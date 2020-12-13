@@ -1,8 +1,12 @@
 html {
+  overflow-x: hidden;
   scroll-behavior: smooth;
   font-size: 10px;
+  height: 100vh;
+  width: 100%;
 }
 body {
+  overflow-x: hidden;
   height: 100vh;
   width: 100%;
 }
@@ -205,7 +209,7 @@ footer {
     border: 3px solid #f53f4f;
     padding: 2rem;
     margin-top: 2.5rem;
-    height: 24rem;
+    min-height: 24rem;
   }
   .portfolio-content-block {
     margin-top: 3rem;
@@ -227,5 +231,47 @@ footer {
   }
   .contacts .social button {
     margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  .main-content h1 {
+    font-size: 4rem;
+  }
+  .main-content button {
+    margin: 0 auto;
+  }
+  .main-content .human-img {
+    display: none;
+  }
+  .work-header h2 {
+    font-size: 3.5rem;
+  }
+  .work-btn {
+    margin: 0;
+    padding: 0;
+  }
+  .work-content-block {
+    padding: 2rem 0;
+  }
+  .portfolio .portfolio-img {
+    width: 90%;
+  }
+  .portfolio-header h2 {
+    font-size: 3.5rem;
+  }
+  .adaptive-header {
+    margin: 0;
+    text-align: center;
+  }
+  .adaptive-header h3 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 500px) and (max-width: 767px) {
+  .main-content .btn_orange {
+    margin: auto;
+  }
+  .main-content .human-img {
+    display: none;
   }
 }
