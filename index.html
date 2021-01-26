@@ -3,143 +3,484 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>i-Store</title>
+    <link href="https://file.myfontastic.com/aBt4is7KnDRay52i6ndYPB/icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/src/css/iconfont.css">
+    <link rel="stylesheet" href="/src/src/css/style.css">
+    <title>Document</title>
 </head>
 <body>
-
     <header class="header">
-        <h1><small>i</small>Store</h1>
-        <div class="night-mode">
-            <h2 class="header-text">Ночная тема</h2>
-            <label id="switcher" class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
+        <div class="header-wrap">
+            <div class="header-logo">
+                <h2 class="icon-comment"><b>LMS</b>Edu</h2>
+            </div>
+            <div class="header-link">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#ourblog">Blog</a></li>
+                </ul>
+            </div>
+            <div class="header-links-search-buy">
+                <a href="#"><img src="/src/src/img/header/1.png" alt="search"></a>
+                <a href="#"><img src="/src/src/img/header/2.png" alt="basket"></a>
+                
+            </div>
+            <div class="header-login-registr">
+                <ul>
+                    <li><a href="#">Register/</a></li>
+                    <li><a href="#">Login</a></li>
+                </ul> 
+            </div>
         </div>
-        </label>
     </header>
-
-    <main class="main">
+    <div class="subheader">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 text-center">
-                    <div class="wrap-block">
-                        <h2>iPhone XR</h2>
-                        <img id="iphoneXR" class="img-block" height="400px" src="/img/1.png" alt="iPhone XR">
-                        <div class="btn-block">
-                            <h3>Цвета:</h3>
-                            <button id="btn-black__XR" class="btn btn-black"></button>
-                            <button id="btn-red__XR" class="btn btn-red"></button>
-                            <button id="btn-yellow__XR" class="btn btn-yellow"></button>
-                        </div>
-                        <div class="size">
-                            <button id="btn64XR" class="btn-size">64 ГБ</button>
-                            <button id="btn128XR" class="btn-size">128 ГБ</button>
-                            <button id="btn256XR" class="btn-size">256 ГБ</button>
-                        </div>
-                        <span id="iphoneXR-text" class="price">799$</span>
-                    </div>
+            <div class="subheader-wrap">
+                <div class="subheader-title">
+                    <h1>Learn Excilence in Teaching.</h1>
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
                 </div>
-                <div class="col-lg-4 text-center">
-                    <div class="wrap-block">
-                        <h2>iPhone X</h2>
-                        <img id="iphoneX" class="img-block" height="400px" src="/img/4.png" alt="iPhone X">
-                        <div class="btn-block">
-                            <h3>Цвета:</h3>
-                            <button id="btn-black__X" class="btn btn-white"></button>
-                            <button id="btn-white__X" class="btn btn-black"></button>
-                        </div>
-                        <div class="size">
-                            <button id="btn64X" class="btn-size">64 ГБ</button>
-                            <button id="btn128X" class="btn-size">128 ГБ</button>
-                            <button id="btn256X" class="btn-size">256 ГБ</button>
-                        </div>
-                        <span id="iphoneX-text" class="price">499$</span>
-                    </div>
+                <button class="subheader-button">EXPLORE COURSES</button>
+                <div class="subheader-img">
+                    <img src="/src/src/img/main/main-hero.png" alt="human">
                 </div>
-                <div class="col-lg-4 text-center">
-                    <div class="wrap-block">
-                        <h2>iPhone 8</h2>
-                        <img id="iphone8" class="img-block" height="400px" src="/img/6.png" alt="iPhone 8">
-                        <div class="btn-block">
-                            <h3>Цвета:</h3>
-                            <button id="btn-white__8" class="btn btn-white"></button>
-                            <button id="btn-black__8" class="btn btn-black"></button>
-                            <button id="btn-gold__8" class="btn btn-gold"></button>
-                        </div>
-                        <div class="size">
-                            <button id="btn64__8" class="btn-size">64 ГБ</button>
-                            <button id="btn128__8" class="btn-size">128 ГБ</button>
-                            <button id="btn256__8" class="btn-size">256 ГБ</button>
-                        </div>
-                        <span id="iphone8-text" class="price">400$</span>
-                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+   <section class="categories">
+       <div class="categories-wrap">
+           <h2 id="courses" class="categories__title">Course Categories</h2>
+           <div class="categories-hr">
+               <hr>
+           </div>
+
+           <div class="categories-items">
+            <div class="categories-wrap-item">
+                <div class="categories_item">
+                    <span class="icon-code"><p>Development</p></span>
                 </div>
-                <div id="newIphone" class=" display-none col-lg-4 text-center">
-                    <div class="wrap-block">
-                        <h2>iPhone Xs</h2>
-                        <img id="iPhoneXSp" class="img-block" height="400px" src="/img/11.png" alt="iPhone Xs">
-                        <div class="btn-block">
-                            <h3>Цвета:</h3>
-                            <button id="btn-white__XS" class="btn btn-white"></button>
-                            <button id="btn-black__XS" class="btn btn-black"></button>
-                            <button id="btn-gold__XS" class="btn btn-gold"></button>
-                        </div>
-                        <div class="size">
-                            <button id="btn64__XS" class="btn-size">64 ГБ</button>
-                            <button id="btn128__XS" class="btn-size">128 ГБ</button>
-                            <button id="btn256__XS" class="btn-size">256 ГБ</button>
-                        </div>
-                        <span id="iphoneXS-text" class="price">1000$</span>
-                    </div>
+                <div class="categories_item">
+                    <span class="icon-desktop"><p>Software</p></span>
                 </div>
-                <div id="newIphone" class="display-none col-lg-4 text-center">
-                    <div class="wrap-block">
-                        <h2>iPhone SE</h2>
-                        <img id="iPhoneSE" class="img-block" height="400px" src="/img/14.png" alt="iPhone SE">
-                        <div class="btn-block">
-                            <h3>Цвета:</h3>
-                            <button id="btn-white__SE" class="btn btn-white"></button>
-                            <button id="btn-black__SE" class="btn btn-black"></button>
-                            <button id="btn-pink__SE" class="btn btn-pink"></button>
-                        </div>
-                        <div class="size">
-                            <button id="btn64__SE" class="btn-size">64 ГБ</button>
-                            <button id="btn128__SE" class="btn-size">128 ГБ</button>
-                            <button id="btn256__SE" class="btn-size">256 ГБ</button>
-                        </div>
-                        <span id="iphoneSE-text" class="price">150$</span>
-                    </div>
+                <div class="categories_item">
+                    <span class="icon-paint-brush"><p>Design</p></span>
                 </div>
-                <!-- Settings Iphone12 -->
-                <div id="newIphone" class=" display-none col-lg-4 text-center">
-                    <div class="wrap-block">
-                        <h2>iPhone 12</h2>
-                        <img id="iPhone12" class="img-block" height="400px" src="/img/iphone12/1.png" alt="iPhone SE">
-                        <div class="btn-block">
-                            <h3>Цвета:</h3>
-                            <button id="btn-graphite__12" class="btn btn-graphite"></button>
-                            <button id="btn-silver__12" class="btn btn-silver"></button>
-                            <button id="btn-pink__12" class="btn btn-pink"></button>
-                            <button id="btn-pacific-blue__12" class="btn btn-pacific-blue"></button>
-                        </div>
-                        <div class="size">
-                            <button id="btn128__12" class="btn-size">128 ГБ</button>
-                            <button id="btn256__12" class="btn-size">256 ГБ</button>
-                            <button id="btn512__12" class="btn-size">512 ГБ</button>
-                        </div>
-                        <span id="iphone12-text" class="price">1372$</span>
-                    </div>
+                <div class="categories_item">
+                    <span class="icon-briefcase"><p>Business</p></span>
                 </div>
-                <div class="col-lg-2 offset-lg-5">
-                    <button class="btn-add">Загрузить ещё</button>
+                <div class="categories_item">
+                    <span class="icon-leaf"><p>Lifestyle</p></span>
+                </div>
+                <div class="categories_item">
+                    <span class="icon-camera"><p>Photography</p></span>
+                </div>
+                </div>
+                
+                <div class="categories-wrap-item-1">
+                    <div class="categories_item-1">
+                        <span class="icon-joomla" class="center"><p>Joomla</p></span>
+                    </div>
+                    <div class="categories_item-1">
+                        <span class="icon-wordpress"><p>Wordpress</p></span>
+                    </div>
+                    <div class="categories_item-1">
+                        <span class="icon-language"><p>Language</p></span>
+                    </div>
+                    <div class="categories_item-1">
+                        <span class="icon-music"><p>Music</p></span>
+                    </div>
+                    <div class="categories_item-1">
+                        <span class="icon-picture-o"><p>Phtoshop</p></span>
+                    </div>
+                    <div class="categories_item-1">
+                        <span class="icon-heartbeat"><p>Medicine</p></span>
+                    </div>
+                    
                 </div>
             </div>
         </div>
-    </main>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/main.js"></script>
+       </div>
+   </section>
+   
+   <section class="topcourses">
+       <div class="topcourses-wrap">
+           <h2>Top Courses</h2>
+            <div class="topcourses-subtitle">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Morbi bibendum venenatis mollis.</p>
+                <button class="topcourses__button">VIEW MORE</button>
+            </div>
+           <div class="topcourses-container">
+               <div class="topcourses-container-item">
+                   <img class="topcourses-padding" src="/src/src/img/top courses/1.png" alt="article">
+                   <h2>Conceptual Art, Photography and Wild Life</h2>
+                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                        elit. Morbi bibendum venenatis mollis. Ut sem 
+                        metus, convallis a libero vel, suscipit
+                    </p>
+                    <img class="topcourses-price" src="/src/src/img/price/price.png" alt="price">
+               </div>
+               <div class="topcourses-container-item">
+                <img class="topcourses-padding"  src="/src/src/img/top courses/2_2.png" alt="article">
+                <h2>Conceptual Art, Photography and Wild Life</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                     elit. Morbi bibendum venenatis mollis. Ut sem 
+                     metus, convallis a libero vel, suscipit
+                 </p>
+                 <img class="topcourses-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+            <div class="topcourses-container-item">
+                <img class="topcourses-padding" src="/src/src/img/top courses/3.png" alt="article">
+                <h2>Conceptual Art, Photography and Wild Life</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                     elit. Morbi bibendum venenatis mollis. Ut sem 
+                     metus, convallis a libero vel, suscipit
+                 </p>
+                 <img class="topcourses-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+           </div>
+           <div class="topcourses-container-1">
+            <div class="topcourses-container-item">
+                <img class="topcourses-padding" src="/src/src/img/top courses/4.png" alt="article">
+                <h2>Conceptual Art, Photography and Wild Life</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                     elit. Morbi bibendum venenatis mollis. Ut sem 
+                     metus, convallis a libero vel, suscipit
+                 </p>
+                 <img class="topcourses-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+            <div class="topcourses-container-item">
+                <img class="topcourses-padding" src="/src/src/img/top courses/5.png" alt="article">
+                <h2>Conceptual Art, Photography and Wild Life</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                     elit. Morbi bibendum venenatis mollis. Ut sem 
+                     metus, convallis a libero vel, suscipit
+                 </p>
+                 <img class="topcourses-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+            <div class="topcourses-container-item">
+                <img class="topcourses-padding" src="/src/src/img/top courses/6_6.png" alt="article">
+                <h2>Conceptual Art, Photography and Wild Life</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                     elit. Morbi bibendum venenatis mollis. Ut sem 
+                     metus, convallis a libero vel, suscipit
+                 </p>
+                 <img class="topcourses-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+           </div>
+       </div>
+   </section>
+
+   <section class="popularcourse">
+       <div class="popularcourse-wrap">
+           <h2>Discover Our Popular Course</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Morbi bibendum venenatis mollis.</p>
+           <div class="popularcourse-item">
+            <button class="popularcourse-button-1">Top Rated</button>
+            <button class="popularcourse-button-2">Trending</button>
+            <button class="popularcourse-button-3">New and Noteworthy</button>
+           </div>
+       </div>
+   </section>
+
+   <section class="sellerscourse">
+    <div class="sellerscourse-wrap">
+        <h2>Best Sellers Course</h2>
+        <div class="sellerscourse-subtitle">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Morbi bibendum venenatis mollis.</p>
+            <button class="button-sellerscourse">VIEW MORE</button>  
+        </div>
+        <div class="sellerscourse-item">
+            <div class="sellerscourse-items">
+                <img src="/src/src/img/best sellers course/1.png" alt="picture for article">
+                <h3>WordPress: Understanding Custom Plugins with PHP</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel, suscipit</p>
+                <img class="sellerscourse-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+            <div class="sellerscourse-items">
+                <img src="/src/src/img/best sellers course/2.png" alt="picture for article">
+                <h3>The Complete Web Developer Course 2.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel, suscipit</p>
+                <img class="sellerscourse-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+            <div class="sellerscourse-items">
+                <img src="/src/src/img/best sellers course/3.png" alt="picture for article">
+                <h3>Introduction to the Design of Everyday Things</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel, suscipit</p>
+                <img class="sellerscourse-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+        </div>
+        <div class="sellerscourse-item-1">
+            <div class="sellerscourse-items">
+                <img src="/src/src/img/best sellers course/4.png" alt="picture for article">
+                <h3>WordPress: Understanding Custom Plugins with PHP</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel, suscipit</p>
+                <img class="sellerscourse-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+            <div class="sellerscourse-items">
+                <img src="/src/src/img/best sellers course/5.png" alt="picture for article">
+                <h3>The Complete Web Developer Course 2.0</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel, suscipit</p>
+                <img class="sellerscourse-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+            <div class="sellerscourse-items">
+                <img src="/src/src/img/best sellers course/6.png" alt="picture for article">
+                <h3>Introduction to the Design of Everyday Things</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi bibendum venenatis mollis. Ut sem metus, convallis a libero vel, suscipit</p>
+                <img class="sellerscourse-price" src="/src/src/img/price/price.png" alt="price">
+            </div>
+        </div>
+    </div>
+   </section>
+
+   <section class="yourgoals">
+       <div class="yourgoals-wrap">
+           <h2>Achieve Your Goals</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Morbi bibendum venenatis mollis.</p>
+           <div class="yourgoals-item-wrap">
+            <div class="yourgoals-item">
+                <img src="/src/src/img/achieve your goals/1.png" alt="article">
+                <h3>Expand Skill Development</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac vulputate (...)</p>
+            </div>
+            <div class="yourgoals-item">
+                <img src="/src/src/img/achieve your goals/2.png" alt="article">
+                <h3>Self Learn</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac vulputate (...)</p>
+            </div>
+            <div class="yourgoals-item">
+                <img src="/src/src/img/achieve your goals/3.png" alt="article">
+                <h3>Tech Jobs</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac vulputate (...)</p>
+            </div>
+        </div>
+        <div class="yourgoals-item-wrap-1">
+            <div class="yourgoals-item">
+                <img src="/src/src/img/achieve your goals/4.png" alt="article">
+                <h3>Unlock Your Potential</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac vulputate (...)</p>
+            </div>
+            <div class="yourgoals-item">
+                <img src="/src/src/img/achieve your goals/5.png" alt="article">
+                <h3>Explore Your Passion</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac vulputate (...)</p>
+            </div>
+            <div class="yourgoals-item">
+                <img src="/src/src/img/achieve your goals/6.png" alt="article">
+                <h3>Analytics Work</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac vulputate (...)</p>
+            </div>
+        </div>
+       </div>
+   </section>
+  
+   <section class="appriciation">
+    <div class="appriciation-wrap">
+        <h2>Client’s Appriciation</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Morbi bibendum venenatis mollis.</p>
+        <div class="appriciation-wrap-content">
+            <div class="appriciation-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing <br> elit. Integer a viverra nisl. Morbi in ornare nibh, sed <br> efficitur neque. Proin efficitur odio eget pulvinar <br> hendrerit.</p>
+                <h3>John Doe</h3>
+                <span>Graphic Designer</span>
+            
+            </div>
+            <hr>
+            <div class="appriciation-content-video">
+                <img src="/src/src/img/clients appriciation/video.png" alt="video">
+            </div>
+        </div>
+        <hr>
+        <div class="appriciation-title">
+            <h2>LMSedu is trusted by 322,000+ students and companies worldwide</h2>
+        </div>
+
+        <div class="slider">
+            <div class="slider__item">
+                <img src="/src/src/img/clients appriciation/1.png" alt="slider picture">
+            </div>
+            <div class="slider__item">
+                <img src="/src/src/img/clients appriciation/2.png" alt="slider picture">
+            </div>
+            <div class="slider__item">
+                <img src="/src/src/img/clients appriciation/3.png" alt="slider picture">
+            </div>
+            <div class="slider__item">
+                <img src="/src/src/img/clients appriciation/3.png" alt="slider picture">
+            </div>
+            <div class="slider__item">
+                <img src="/src/src/img/clients appriciation/1.png" alt="slider picture">
+            </div>
+          </div>
+      </div>
+          </div>
+
+    </div>
+   </section>
+
+
+   <section class="ourblog">
+       <div class="ourblog-wrap">
+           <h2 id="ourblog">Our Blog</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Morbi bibendum venenatis mollis. Ut sem metus.</p>
+
+           <div class="ourblog-wrap-items">
+                <div class="ourblog-item">
+                    <img src="/src/src/img/our blog/1.png" alt="picture for article">
+                    <span class="date">April 5, 2017</span>
+                    <span class="name">John Doe</span>
+                    <h3>Learner Story: Alena – Exploring the Future Through Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                        bibendum venenatis mollis. Ut sem metus, convallis a libero vel, 
+                        suscipit
+                    </p>
+                    <span class="read-more win-arrow">Read More</span>
+                    <span class="comment win-comment">79</span>
+                    <span class="like win-heart">51</span>
+                </div>
+                <div class="ourblog-item">
+                    <img src="/src/src/img/our blog/2.png" alt="picture for article">
+                    <span class="date">April 5, 2017</span>
+                    <span class="name">John Doe</span>
+                    <h3>Learner Story: Alena – Exploring the Future Through Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                        bibendum venenatis mollis. Ut sem metus, convallis a libero vel, 
+                        suscipit
+                    </p>
+                    <span class="read-more win-arrow">Read More</span>
+                    <span class="comment win-comment">79</span>
+                    <span class="like win-heart">51</span>
+                </div>
+                <div class="ourblog-item">
+                    <img src="/src/src/img/our blog/3.png" alt="picture for article">
+                    <span class="date">April 5, 2017</span>
+                    <span class="name">John Doe</span>
+                    <h3>Learner Story: Alena – Exploring the Future Through Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                        bibendum venenatis mollis. Ut sem metus, convallis a libero vel, 
+                        suscipit
+                    </p>
+                    <span class="read-more win-arrow">Read More</span>
+                    <span class="comment win-comment">79</span>
+                    <span class="like win-heart">51</span>
+                </div>
+                <div class="ourblog-item">
+                    <img src="/src/src/img/our blog/3.png" alt="picture for article">
+                    <span class="date">April 5, 2017</span>
+                    <span class="name">John Doe</span>
+                    <h3>Learner Story: Alena – Exploring the Future Through Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                        bibendum venenatis mollis. Ut sem metus, convallis a libero vel, 
+                        suscipit
+                    </p>
+                    <span class="read-more win-arrow">Read More</span>
+                    <span class="comment win-comment">79</span>
+                    <span class="like win-heart">51</span>
+                </div>
+                <div class="ourblog-item">
+                    <img src="/src/src/img/our blog/2.png" alt="picture for article">
+                    <span class="date">April 5, 2017</span>
+                    <span class="name">John Doe</span>
+                    <h3>Learner Story: Alena – Exploring the Future Through Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                        bibendum venenatis mollis. Ut sem metus, convallis a libero vel, 
+                        suscipit
+                    </p>
+                    <span class="read-more win-arrow">Read More</span>
+                    <span class="comment win-comment">79</span>
+                    <span class="like win-heart">51</span>
+                </div>
+                <div class="ourblog-item">
+                    <img src="/src/src/img/our blog/1.png" alt="picture for article">
+                    <span class="date">April 5, 2017</span>
+                    <span class="name">John Doe</span>
+                    <h3>Learner Story: Alena – Exploring the Future Through Graphic Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi 
+                        bibendum venenatis mollis. Ut sem metus, convallis a libero vel, 
+                        suscipit
+                    </p>
+                    <span class="read-more win-arrow">Read More</span>
+                    <span class="comment win-comment">79</span>
+                    <span class="like win-heart">51</span>
+                    
+                </div>
+            </div>
+        </div>
+   </section>
+   <form class="become">
+       <div class="become-wrap">
+           <div class="become-wrap-item">
+               <h2>Become A Instructor</h2>
+               <input type="text" value="Become A Instructor" disabled>
+               <button>JOIN</button>
+           </div>
+       </div>
+   </form>
+
+   <footer class="footer">
+       <div class="footer-wrap">
+           <div class="footer-wrap-item">
+               <div class="footer-items">
+                <h3>Address:</h3>
+                <p class="adress-style">73724 Route 30</p>
+                <p class="adress-style-line2">South Richmond Hill, NY 11419</p>
+                <span class="tel-number"><b>Tel: </b>(603)-677-3400</span>
+                <span class="email"><b>Email: </b>info@yourdomain.com</span>
+                <span class="web"><b>Web: </b>yourdomain.com</span>
+               </div>
+               <div class="footer-items">
+                <h3>Help Center:</h3>
+                <p>Documentations</p>
+                <p>Tutorials</p>
+                <p>Term of Use</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footer-items">
+                <h3>About Us:</h3>
+                <p>Our Team</p>
+                <p>Company</p>
+                <p>Jobs</p>
+                <p>News Latter</p>
+            </div>
+            <div class="footer-items">
+                <h3>Tools:</h3>
+                <p>Create Acccount</p>
+                <p>Log In</p>
+                <p>Services</p>
+                <p>Sitemap</p>
+            </div>
+            <div class="footer-items">
+                <h3>Get In Touch:</h3>
+                <p>Contact Us</p>
+                <p>Join Us</p>
+                <p>Invite Us</p>
+                <p>Donate</p>
+            </div>
+        </div>
+        <div class="footer-end">
+        <div class="footer-end-wrap">
+            <div class="footer-end-item">
+                <span float="left">Facebook. Twitter. Instagram. LinkedIn. Google Plus.</span>
+                <span float="right">Copyright © 2017 LMS EDUCATION. All Rights Reserved</span>
+            </div>
+            
+        </div>
+        </div>
+       </div>
+   </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/src/src/js/slick.min.js"></script>
+    <script src="/src/src/js/slider.js"></script>
+    <script src="/src/src/js/slidercontent.js"></script>
+
+    
 </body>
+
 </html>
