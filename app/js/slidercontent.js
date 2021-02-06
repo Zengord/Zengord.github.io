@@ -1,1 +1,0 @@
-$(document).ready(function(){$(".ourblog-wrap-items").slick({arrows:!1,dots:!0,adaptiveHeight:!0,slidesToShow:3,infinite:!0,draggable:!1,responsive:[{breakpoint:848,settings:{slidesToShow:2}},{breakpoint:704,settings:{slidesToShow:1}}]})})
