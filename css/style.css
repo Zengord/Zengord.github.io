@@ -985,6 +985,20 @@ body.ie ._ibg img {
   width: 50px;
   background-color: #dadada;
   height: 100vh;
+  opacity: 0;
+  -webkit-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
+  -webkit-transform: translate(0, -300px);
+      -ms-transform: translate(0, -300px);
+          transform: translate(0, -300px);
+}
+
+.header._active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .header__icons {
@@ -1174,6 +1188,20 @@ body.ie ._ibg img {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: contain;
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(-100%, 0);
+      -ms-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
+}
+
+.screen-1__image._active {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  opacity: 1;
 }
 
 .screen-1__column {
@@ -1193,12 +1221,30 @@ body.ie ._ibg img {
   text-transform: uppercase;
 }
 
+.screen-1__button:hover {
+  opacity: 0.8;
+}
+
 .screen-1__button a {
   text-align: center;
   display: inline-block;
   color: #fff;
   padding: 12px 20px;
   background-color: #e0043c;
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(0, 100%);
+      -ms-transform: translate(0, 100%);
+          transform: translate(0, 100%);
+}
+
+.screen-1__button a._active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .screen-1__phone {
@@ -1206,6 +1252,20 @@ body.ie ._ibg img {
   padding-bottom: 400px;
   font-size: 25.3px;
   font-size: 25.3px;
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(0, -100%);
+      -ms-transform: translate(0, -100%);
+          transform: translate(0, -100%);
+}
+
+.screen-1__phone._active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .screen-1__phone a {
@@ -1217,6 +1277,20 @@ body.ie ._ibg img {
   font-size: 30px;
   position: relative;
   z-index: 2;
+  opacity: 0;
+  -webkit-transition: all 1s ease 0s;
+  -o-transition: all 1s ease 0s;
+  transition: all 1s ease 0s;
+  -webkit-transform: translate(100%, 0);
+      -ms-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+}
+
+.screen-1__title._active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .screen-1__title h1 {
@@ -1231,16 +1305,59 @@ body.ie ._ibg img {
   left: -83px;
   color: #ececec;
   font-size: 104px;
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+      -ms-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+  transform: translate(100%, 0);
+}
+
+.screen-1__under-title._active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .screen-1__number {
   margin: 0px 0px 15px 0px;
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+      -ms-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.screen-1__number._active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .screen-1__text {
   font-size: 16px;
   padding: 0px 0px 63px 0px;
   color: #dadada;
+  opacity: 0;
+  -webkit-transform: translate(100%, 0);
+      -ms-transform: translate(100%, 0);
+          transform: translate(100%, 0);
+  -webkit-transition: all 2s ease 0s;
+  -o-transition: all 2s ease 0s;
+  transition: all 2s ease 0s;
+}
+
+.screen-1__text._active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .form input {
