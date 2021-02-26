@@ -253,6 +253,193 @@ let sliderСosmetology = new Swiper('.slider3', {
 });
 
 
+let sliderBeauty = new Swiper('.slider4', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 800,
+	//touchRatio: 0,
+	simulateTouch: true,
+	loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	//pagination: {
+	//	el: '.slider-quality__pagging',
+	//	clickable: true,
+	//},
+	// Arrows
+	navigation: {
+		nextEl: '.column-body-screen-3__next',
+		prevEl: '.column-body-screen-3__back',
+	},
+	/*
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1268: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+	*/
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
+let sliderTeam = new Swiper('.slider-screen-5', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 800,
+	//touchRatio: 0,
+	simulateTouch: true,
+	loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	//pagination: {
+	//	el: '.slider-quality__pagging',
+	//	clickable: true,
+	//},
+	// Arrows
+	navigation: {
+		nextEl: '.slider-screen-5__next',
+		prevEl: '.slider-screen-5__back',
+	},
+	/*
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1268: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+	*/
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
+let sliderGallery = new Swiper('.screen-6__slider', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
+	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 800,
+	//touchRatio: 0,
+	// simulateTouch: true,
+	// loop: true,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	pagination: {
+		el: '.screen-6__bullet',
+		clickable: true,
+	},
+	effect: 'fade',
+	fadeEffect:{
+		crossFade: true
+	},
+	// Arrows
+	// navigation: {
+	// 	nextEl: '.slider-screen-5__next',
+	// 	prevEl: '.slider-screen-5__back',
+	// },
+	/*
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 20,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+		1268: {
+			slidesPerView: 4,
+			spaceBetween: 30,
+		},
+	},
+	*/
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+
 var ua = window.navigator.userAgent;
 var msie = ua.indexOf("MSIE ");
 var isMobile = { Android: function () { return navigator.userAgent.match(/Android/i); }, BlackBerry: function () { return navigator.userAgent.match(/BlackBerry/i); }, iOS: function () { return navigator.userAgent.match(/iPhone|iPad|iPod/i); }, Opera: function () { return navigator.userAgent.match(/Opera Mini/i); }, Windows: function () { return navigator.userAgent.match(/IEMobile/i); }, any: function () { return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows()); } };
