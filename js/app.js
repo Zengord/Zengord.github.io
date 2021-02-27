@@ -404,10 +404,10 @@ let sliderGallery = new Swiper('.screen-6__slider', {
 		crossFade: true
 	},
 	// Arrows
-	// navigation: {
-	// 	nextEl: '.slider-screen-5__next',
-	// 	prevEl: '.slider-screen-5__back',
-	// },
+	navigation: {
+		nextEl: '.screen-6__next',
+		prevEl: '.screen-6__back',
+	},
 	/*
 	breakpoints: {
 		320: {
@@ -528,39 +528,68 @@ function menu_close() {
 }
 //=================
 
-// if (iconMenu == "_active") {
-// 	let delay = 500;
-// 	let menuBody = document.querySelector(".header__menu");
-// 	let menuScreen = document.querySelector(".screen-1");
-// 	let headerList = document.querySelector('header__list');
-// 	console.log(headerList);
-// 	headerList.addEventListener("click", function (e) {
-// 		if (unlock) {
-// 			body_lock(delay);
-// 			iconMenu.classList.remove("_active");
-// 			menuBody.classList.remove("_active");
-// 			menuScreen.classList.remove("_active");
-// 		}
-// 	});
-// };
-
-
-
-
-
-// if (iconMenu.classList.contains('_active') && menuBody.classList.contains('_active')){
-// 	const links = document.querySelector('.header__list');
-// 	console.log(".header__list");
-// 	links.foreach(link =>{
-// 		links.addEventListener('click', () =>{
-// 			iconMenu.classList.remove("_active");
-// 			menuBody.classList.remove("_active");
-// 			menuScreen.classList.remove("_active");
-// 		});
-// 	});
-// };
-
-
+if (iconMenu != null) {
+	let menuBody = document.querySelector(".header__menu");
+	let menuScreen = document.querySelector(".screen-1");
+	let list1 = document.querySelector('.list1');
+	let list2 = document.querySelector('.list2');
+	let list3 = document.querySelector('.list3');
+	let list4 = document.querySelector('.list4');
+	let list5 = document.querySelector('.list5');
+	let list6 = document.querySelector('.list6');
+	let list7 = document.querySelector('.list7');
+	let list8 = document.querySelector('.list8');
+	let customBody = document.querySelector("body");
+	console.log(customBody);
+	list1.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+	list2.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+	list3.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+	list4.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+	list5.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+	list6.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+	list7.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+	list8.addEventListener("click", function (e) {
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+		menuScreen.classList.remove("_active");
+		customBody.classList.remove("_lock");
+	});
+};
 
 //BodyLock
 function body_lock(delay) {
@@ -1694,7 +1723,7 @@ function scroll_scroll() {
 				scr_item.classList.add('_active');
 				scroll_load_item(scr_item);
 			} else {
-				scr_item.classList.remove('_active');
+				// scr_item.classList.remove('_active');
 			}
 			if (((src_value > scr_item_offset - window.innerHeight))) {
 				if (scr_item.querySelectorAll('._lazy').length > 0) {
