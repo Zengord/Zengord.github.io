@@ -9,6 +9,38 @@
 }
 
 @font-face {
+  font-family: "avanti";
+  font-display: swap;
+  src: url("../fonts/avanti.woff") format("woff"), url("../fonts/avanti.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "futuris";
+  font-display: swap;
+  src: url("../fonts/futuris.woff") format("woff"), url("../fonts/futuris.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'futuris';
+  src: url("../fonts/futuris.eot");
+  src: local("☺"), url("../fonts/futuris.woff") format("woff"), url("../fonts/futuris.ttf") format("truetype"), url("../fonts/futuris.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avanti';
+  src: url("../fonts/avanti.eot");
+  src: local("☺"), url("../fonts/avanti.woff") format("woff"), url("../fonts/avanti.ttf") format("truetype"), url("../fonts/avanti.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'amatika';
   font-display: swap;
   src: url("../fonts/amatika.ttf?n2sniv") format("truetype"), url("../fonts/amatika.woff?n2sniv") format("woff"), url("../fonts/amatika.svg?n2sniv#amatika") format("svg");
@@ -107,7 +139,7 @@ body {
 
 body {
   line-height: 1;
-  font-family: "Arial";
+  font-family: "avanti";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -117,7 +149,7 @@ body {
 input,
 button,
 textarea {
-  font-family: "Arial";
+  font-family: "avanti";
 }
 
 input::-ms-clear {
@@ -1383,6 +1415,7 @@ body.ie ._ibg img {
 }
 
 .screen-1__title {
+  font-family: 'futuris';
   font-size: 30px;
   font-size: 30px;
   position: relative;
@@ -3039,6 +3072,7 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 .screen-7__map span {
+  font-family: 'futuris';
   position: relative;
   bottom: 23px;
   left: 314px;
