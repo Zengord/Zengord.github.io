@@ -22,8 +22,7 @@
     <!-- Bootstrap CSS -->
     
     <!-- Site CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     
     <!-- Responsive CSS -->
     
@@ -34,7 +33,164 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+         @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800');
+ @import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700');
+ @import url(all.css);
+ @import url(superslides.css);
+ @import url(bootstrap-select.css);
+ @import url(carousel-ticker.css);
+ @import url(code_animate.css);
+ @import url(bootsnav.css);
+ @import url(owl.carousel.min.css);
+ @import url(jquery-ui.css);
+ @import url(baguetteBox.min.css);
 
+ body {
+     color: #666666;
+     font-size: 15px;
+     font-family: 'Dosis', sans-serif;
+     line-height: 1.80857;
+ }
+
+ a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+ }
+
+ a {
+     color: #1f1f1f;
+     text-decoration: none;
+     outline: none;
+ }
+
+ a {
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+ }
+
+ ul,
+ li {
+     list-style: none;
+     margin: 0px;
+     padding: 0px;
+ }
+
+ button:focus {
+     outline: none;
+     box-shadow: none;
+ }
+
+ :focus {
+     outline: 0;
+ }
+
+ nav.navbar.bootsnav ul.nav>li>a {
+     margin: 0px;
+ }
+
+ @media (min-width: 1024px) {
+     nav.navbar ul.nav>li>a {
+         padding: 30px 15px;
+         font-weight: 600;
+     }
+ }
+
+ nav.navbar.bootsnav ul.nav>li>a {
+     position: relative;
+     font-weight: 700;
+     font-size: 16px;
+     color: #000000;
+     text-transform: uppercase;
+     padding-top: 10px;
+     padding-bottom: 10px;
+     padding-left: 10px;
+     padding-right: 30px;
+ }
+
+ nav.navbar.bootsnav ul.nav li>a:hover {
+     color: #b0b435;
+ }
+
+ .cover-slides {
+     height: 100vh;
+ }
+
+ .slides-navigation a {
+     background: #b0b435;
+     position: absolute;
+     height: 70px;
+     width: 70px;
+     top: 50%;
+     font-size: 20px;
+     display: block;
+     color: #fff;
+     line-height: 90px;
+     text-align: center;
+     transition: all .3s ease-in-out;
+ }
+
+ .slides-navigation a i {
+     font-size: 40px;
+ }
+
+ .slides-navigation a:hover {
+     background: #000000;
+ }
+
+ .cover-slides .container {
+     height: 100%;
+     position: relative;
+     z-index: 2;
+ }
+
+ .cover-slides .container>.row {
+     -webkit-box-align: center;
+     -ms-flex-align: center;
+     align-items: center;
+ }
+
+ .cover-slides .container>.row {
+     height: 100%;
+ }
+
+ .overlay-background {
+     background: #333;
+     position: absolute;
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     opacity: 0.5;
+ }
+
+ .slides-pagination a {
+     border: 2px solid #ffffff;
+     border-radius: 6px;
+ }
+
+ .slides-pagination a.current {
+     background: #b0b435;
+     border: 2px solid #b0b435;
+ }
+
+ .nav>li {
+     position: relative;
+     display: inline-block;
+     vertical-align: middle;
+ }
+    </style>
 </head>
 
 <body>
@@ -240,7 +396,8 @@
         </p>
     </div>
     <!-- End copyright  -->
-    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/custom.css">
     <script src="js/lazysizes.min.js"></script>
