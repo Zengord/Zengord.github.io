@@ -1,0 +1,25 @@
+@media (max-width: 500px) {
+    .home-slider5 {
+        display: none;
+    }
+
+    .mobile-content {
+        margin: 0 auto;
+    }
+
+    .text-content {
+        font-size: 28px;
+        line-height: 40px;
+        font-weight: 500;
+        padding-left: 30px;
+        font-family: "futura-pt", sans-serif;
+    }
+
+    .content__wrapper-text span {}
+}
+
+@media (min-width: 500px) {
+    .content__wrapper-text {
+        display: none;
+    }
+}
