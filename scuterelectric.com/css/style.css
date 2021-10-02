@@ -416,9 +416,6 @@ h2 {
   height: 100%;
   top: 0;
   left: 0;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url("../img/bg_main.webp");
 }
 
@@ -480,9 +477,6 @@ h2 {
 
 .brands__image {
   padding: 0px 0px 37.51% 0px;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url("../img/brands/03.webp");
 }
 
@@ -547,9 +541,6 @@ h2 {
   height: 100%;
   top: 0;
   left: 0;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   background-image: url("../img/brands/04.webp");
 }
 
