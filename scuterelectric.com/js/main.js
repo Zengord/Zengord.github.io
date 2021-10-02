@@ -1,6 +1,4 @@
-//@prepros-append jq-start.js
-//@prepros-append script.js
-//@prepros-append jq-end.js
+
 $(document).ready(function() {
 		var w=$(window).outerWidth();
 		var h=$(window).outerHeight();
