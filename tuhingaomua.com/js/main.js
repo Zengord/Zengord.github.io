@@ -1,0 +1,1 @@
+!function(e){"use strict";e('[data-toggle="tooltip"]').tooltip({animated:"fade",placement:"top",container:"body"}),e.scrollUp({scrollText:'<i class="fa fa-angle-up"></i>',easingType:"linear",scrollSpeed:900,animation:"fade"}),jQuery("nav#dropdown").meanmenu()}(jQuery);
