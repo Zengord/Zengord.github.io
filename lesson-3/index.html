@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3</title>
+    <!-- <style>
+        p{
+            color: green;
+        }
+    </style> -->
+</head>
+
+<body>
+    <header>
+        <h1>20 сочетаний клавиш для ускорения работы в VS Code</h1>
+        <nav>
+            <ol>
+                <li><a href="#one">Объединить строку</a></li>
+                <li><a href="#two">Форматирование кода</a></li>
+                <li><a href="#three">Обрезка множественных пробелов</a></li>
+                <li><a href="#four">Сворачивание блоков кода</a></li>
+                <li><a href="#five">Скопировать строку сверху или снизу</a></li>
+                <li><a href="#six">Разбить окно редактора по вертикали</a></li>
+                <li><a href="#seven">Окно редактора в виде сетки</a></li>
+                <li><a href="#eight">Выделить слово</a></li>
+                <li><a href="#nine">Открыть или закрыть боковую панель</a></li>
+                <li><a href="#ten">Переход к указанной строке</a></li>
+                <li><a href="#eleven">Переход к символу в файле</a></li>
+                <li><a href="#twelve">Переход к символу в рабочем окружении</a></li>
+                <li><a href="#thirteen">Удаление предыдущего слова</a></li>
+                <li><a href="#fourteen">Выделение целых слов</a></li>
+                <li><a href="#fifteen">Дублирование строки</a></li>
+                <li><a href="#sixteen">Удаление строки</a></li>
+                <li><a href="#seventeen">Добавление курсора сверху / снизу</a></li>
+                <li><a href="#eighteen">Переименование символа</a></li>
+                <li><a href="#nineteen">Выделение столбца</a></li>
+                <li><a href="#twenty">Палитра команд</a></li>
+
+            </ol>
+        </nav>
+
+    </header>
+    <main>
+        <div id="one">
+            <h2>Объединить строку</h2>
+            <img src="img/gif1.gif" alt="Иллюстрация работы">
+            <ul>
+                <li>Mac — Ctrl+j</li>
+                <li>Ubuntu, Windows: откройте существующие сочетания клавиш File -> Preferences -> Keyboard shortcuts и
+                    назначьте удобное сочетание для editor.action.join.</li>
+            </ul>
+        </div>
+        <div id="two">
+            <h2>Форматирование кода</h2>
+            <img src="img/gif2.gif" alt="">
+            <p>Это сочетание помогает выровнять код в соответствии с заранее прописанными настройками редактора.</p>
+            <ul>
+                <li class="turnli">Windows — Shift + Alt + F</li>
+                <li class="turnli">Mac — Shift + Option + F</li>
+                <li class="turnli">Ubuntu — Ctrl + Shift + I</li>
+            </ul>
+        </div>
+        <div id="three">
+            <h2>Обрезка множественных пробелов</h2>
+            <p>Данное сочетание клавиш помогает избавиться от лишних пробелов в начале или конце строки.</p>
+            <p>Совет: применяйте в самом конце, когда завершаете работу над кодом в текущем файле.</p>
+            <img src="img/gif3.gif" alt="">
+            <p>Есть и альтернативный подход. Можно включить обрезку пробелов в самих настройках:</p>
+            <ol>
+                <li class="turnli">Откройте пользовательские настройки (Preferences > Settings > вкладка User Settings).</li>
+                <li class="turnli">Кликните значок {} в верхней правой части окна. Это откроет документ.</li>
+                <li class="turnli">Добавьте новое правило «files.trimTrailingWhitespace«: true в документ User Settings (если его там
+                    еще нет). Таким образом вы не редактируете дефолтные настройки напрямую, а добавляете к ним новое
+                    правило.</li>
+                <li class="turnli">Сохраните файл User Settings.</li>
+            </ol>
+            <p>Также мы добавили новую команду для запуска вручную (Trim Trailing Whitespace в палитре команд).</p>
+            <p>Если вы используете более новую версию VS Code, после открытия пользовательских настроек вы увидите
+                следующее окно (поставьте галочку, как показано):</p>
+            <img src="img/01.png" alt="">
+        </div>
+        <div id="four">
+            <h2 class="header">Сворачивание блоков кода</h2>
+            <p>Иногда, если размер файла велик или если вы просто хотите понять код в целом, без подробностей, вам
+                пригодится функция сворачивания блоков кода.</p>
+            <img src="img/gif4.gif" alt="">
+            <p>Свернуть внутреннюю область возле курсора вам помогут следующие сочетания клавиш:</p>
+            <ul>
+                <li class="turnli">Windows /Ubuntu — Ctrl + Shift + [</li>
+                <li class="turnli">Mac — Command+ Option + [</li>
+            </ul>
+            <p>Чтобы развернуть, применяйте те же сочетания, но с закрывающей квадратной скобкой:</p>
+            <ul>
+                <li class="turnli">Windows /Ubuntu — Ctrl + Shift + ]</li>
+                <li class="turnli">Mac — Command+ Option + ]</li>
+            </ul>
+        </div>
+        <div id="five">
+            <h2>Скопировать строку сверху или снизу</h2>
+            <img src="img/gif5.gif" alt="">
+            <ul>
+                <li class="turnli">Windows — Shift + Alt + стрелка вверх / вниз</li>
+                <li class="turnli">Mac — Shift + Option + стрелка вверх / вниз</li>
+                <li class="turnli">Ubuntu — Ctrl + Shift + Alt + стрелка вверх / вниз</li>
+            </ul>
+            <p>Назначенные сочетания можно посмотреть и отредактировать, пройдя по пути File > Preferences > Keyboard
+                Shortcuts.</p>
+        </div>
+        <div id="six">
+            <h2>Разбить окно редактора по вертикали</h2>
+            <img src="img/gif6.gif" alt="">
+            <ul>
+                <li class="turnli">Windows — Shift + Alt + \ или 2,3,4</li>
+                <li class="turnli">Mac — Command + \ или 2,3,4</li>
+                <li class="turnli">Ubuntu — Shift + Alt + \ или 2,3,4</li>
+            </ul>
+            <p>Чтобы разбить окно редактора, можно воспользоваться командой split editor. Оригинальное сочетание клавиш
+                для разделения окна — 123. Функция разделения полезна для параллельного редактирования файлов.</p>
+            <p>Назначенные сочетания также можно отредактировать, выбрав новые по своему вкусу (File > Preferences >
+                Keyboard Shortcuts).</p>
+        </div>
+        <div id="seven">
+            <h2>Окно редактора в виде сетки</h2>
+            <img src="img/gif7.gif" alt="">
+            <p>По умолчанию группы редактора располагаются в вертикальных столбцах (например, когда вы разбиваете окно,
+                чтобы открыть параллельно два файла). Но вы можете с легкостью расположить группы так, как вам больше
+                нравится (хоть вертикально, хоть горизонтально).</p>
+            <p>Для поддержки гибких макетов можно создать пустые группы редактора. По умолчанию закрытие последнего
+                редактора группы закрывает и саму группу, но это поведение можно изменить, добавив в настройках
+                workbench.editor.closeEmptyGroups: false.</p>
+            <p>В меню View > Editor Layout можно посмотреть набор готовых вариантов разделения окна.</p>
+            <img src="img/02.png" alt="">
+        </div>
+        <div id="eight">
+            <h2>Выделить слово</h2>
+            <img src="img/03.png" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Ctrl+ d</li>
+                <li>Mac — Command + d</li>
+            </ul>
+            <p>Если нажать command + d больше одного раза, к выделению добавится еще одно вхождение того же слова далее
+                по тексту.</p>
+        </div>
+        <div id="nine">
+            <h2>Открыть или закрыть боковую панель</h2>
+            <img src="img/gif8.gif" alt="">
+            <ul>
+                <li class="turnli">Windows, Ubuntu — Ctrl+ b</li>
+                <li class="turnli">Mac — Command + b</li>
+            </ul>
+            <p>Иногда очень пригождается возможность закрыть боковую панель, например, если у файла слишком большая
+                ширина или если хотите разбить окно и открыть одновременно два файла.</p>
+        </div>
+        <div id="ten">
+            <h2>Переход к указанной строке</h2>
+            <img src="img/gif9.gif" alt="">
+            <p>Примечание: чтобы перейти к нужной строке в файле, используйте сочетание клавиш ctrl + g, после которого
+                введите номер строки. Или же сначала откройте меню файла при помощи command + p, затем введите двоеточие
+                и номер нужной строки.</p>
+            <ul>
+                <li class="turnli">Windows, Ubuntu — Ctrl + g</li>
+                <li class="turnli">Mac — Ctrl + g или Ctrl + p</li>
+            </ul>
+        </div>
+        <div id="eleven">
+            <h2>Переход к символу в файле</h2>
+            <img src="img/gif10.gif" alt="">
+            <ul>
+                <li class="turnli">Windows, Ubuntu — Ctrl + Shift + o</li>
+                <li class="turnli">Mac — Command + Shift+ o</li>
+            </ul>
+            <p>Символы можно группировать, добавив двоеточие:</p>
+            <img src="img/04.png" alt="">
+        </div>
+        <div id="twelve">
+            <h2>Переход к символу в рабочем окружении</h2>
+            <img src="img/05.png" alt="">
+            <ul>
+                <li class="turnli">Windows, Ubuntu — Ctrl + t</li>
+                <li class="turnli">Mac — Command + t</li>
+            </ul>
+        </div>
+        <div id="thirteen">
+            <h2>Удаление предыдущего слова</h2>
+            <img src="img/gif11.gif" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Ctrl + backspace</li>
+                <li>Mac — Command + delete</li>
+            </ul>
+            <p>Полезно в ситуациях, если набрали лишнее, а жать несколько раз backspace не любите.</p>
+        </div>
+        <div id="fourteen">
+            <h2>Выделение целых слов</h2>
+            <img src="img/gif12.gif" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Ctrl + Shift + стрелка вправо / влево</li>
+                <li>Mac — Command + Shift + стрелка вправо / влево</li>
+            </ul>
+            <p>Очень полезно для более быстрого выделения и редактирования.</p>
+        </div>
+        <div id="fifteen">
+            <h2>Дублирование строки</h2>
+            <img src="img/gif13.gif" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Ctrl + Shift + d</li>
+                <li>Mac — Command + Shift +d</li>
+            </ul>
+            <p>Дублирование строк это очень полезный и хорошо известный функционал.</p>
+        </div>
+        <div id="sixteen">
+            <h2>Удаление строки</h2>
+            <img src="img/gif19.gif" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Ctrl + x</li>
+                <li>Mac — Command + x</li>
+            </ul>
+        </div>
+        <div id="seventeen">
+            <h2>Добавление курсора сверху / снизу</h2>
+            <img src="img/gif14.gif" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Ctrl + Alt + стрелка вверх / вниз</li>
+                <li>Mac — Command + Alt + стрелка вверх / вниз</li>
+            </ul>
+            <p>Функция дублирования курсоров в VS Code, пожалуй, сэкономит вам больше всего времени.</p>
+        </div>
+        <div id="eighteen">
+            <h2>Переименование символа</h2>
+            <img src="img/gif15.gif" alt="">
+            <ul>
+                <li>Windows, Mac, Ubuntu — F2.</li>
+            </ul>
+            <p>Выделите нужный символ, а затем нажмите f2. Также можно использовать контекстное меню.</p>
+        </div>
+        <div id="nineteen">
+            <h2>Выделение столбца</h2>
+            <img src="img/gif16.gif" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Shift + Alt</li>
+                <li>Mac — Shift + Option</li>
+            </ul>
+            <p>При помощи этих сочетаний клавиш и движения мыши можно выделять блоки текста. В конце каждой выделенной
+                строки будет добавлен курсор.</p>
+        </div>
+        <div id="twenty">
+            <h2>Палитра команд</h2>
+            <img src="img/gif17.gif" alt="">
+            <ul>
+                <li>Windows, Ubuntu — Ctrl + p</li>
+                <li>Mac — Command + p</li>
+            </ul>
+            <p>При помощи этих сочетаний клавиш можно получить доступ ко всем доступным в вашем контексте командам. Вот
+                самые используемые из них:</p>
+            <ol>
+                <li>
+                    <h3>1. Открыть файл</h3>
+                    <p>Чтобы перейти к определенному файлу, введите сочетание клавиш для открытия палитры команд, а
+                        затем начните вводить название искомого файла. Это позволит быстро найти нужный файл.</p>
+                    <img src="img/gif18.gif" alt="">
+                </li>
+                <li>
+                    <h3>Посмотреть сочетание клавиш для команды</h3>
+                    <p>Все команды в палитре команд приводятся с назначенными им сочетаниями клавиш (если такие
+                        назначения есть). Поэтому, забыв нужное сочетание, можно подсмотреть его в палитре.</p>
+                    <img src="img/06.png" alt="">
+                    <p>Полезных сочетаний клавиш в VS Code очень много. При желании можно ознакомиться с ними подробнее:
+                    </p>
+                    <ul>
+                        <li>Linux — <a
+                                href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf">https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf</a>
+                        </li>
+                        <li>Window — <a
+                                href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf">https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf</a>
+                        </li>
+                        <li>macOS — <a
+                                href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf">https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf</a>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <div>
+           <p>Подвал <span>подвальный</span></p>
+            
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

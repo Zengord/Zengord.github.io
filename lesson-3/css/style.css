@@ -1,0 +1,81 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+/* --------------- */
+
+
+
+#one{
+	color:red;
+}
+
+.four{
+	color: purple;
+}
+
+div  h2 {
+	font-size: 40px;
+}
+
+div > p{
+	color: seagreen;
+}
+
+ul, ol.turnli{
+	color:brown;
+	font-size: 20px;	
+}
+
+div ~ p{
+	color: pink;	
+}
+
+footer div p{
+	color: salmon;
+	font-size: 20px;
+}
+p > span{
+	color: sienna;
+	font-size: 35px;
+}
+span{
+	color: red;
+}
+
+
+[alt] {
+	width: 700px;
+	height: 500px;
+}
+
+img{
+	width: 200px;
+	height: 200px;
+}
