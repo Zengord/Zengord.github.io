@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap&subset=cyrillic-ext');
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+        url('../fonts/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.woff2') format('woff2'),
+        url('../fonts/Rubik-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    line-height: 1;
+}
+
+.heading {
+    font-size: 40px;
+    color: rgb(0, 26, 97);
+    font-family: "Lobster Two", cursive;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #231544;
+}
+
+nav {
+    text-align: right;
+}
+
+li>a {
+    font-size: 20px;
+    color: #0f580f;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 25px;
+    font-family: "Lobster Two", cursive;
+    color: #231544;
+    text-align: center;
+}
+
+.linethrogh {
+    text-decoration: line-through;
+}
+
+.overline {
+    text-decoration: overline;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lineheight {
+    line-height: 150%;
+}
+
+.letter-spacing {
+    letter-spacing: 2px;
+}
+
+.wordspacing {
+    word-spacing: 10px;
+}
+
+.textindent {
+    text-indent: 45px;
+}
+
+div img {
+    width: 500px;
+    text-align: center;
+}
+
+.footer {
+    text-transform: uppercase;
+}
+
+.footer h3 {
+    color: rgb(20, 131, 70);
+    font-size: 20px;
+}
+
+.cssfonts {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.fontregular {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+.rubik {
+    font-family: Rubik, sans-serif;
+}
+
+.rubikbold {
+    font-family: Rubik, sans-serif;
+    font-weight: 700;
+}
