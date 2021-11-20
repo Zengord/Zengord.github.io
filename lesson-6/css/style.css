@@ -1,0 +1,180 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+li {
+	list-style: none;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+img {
+	vertical-align: top;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	font-size: 16px;
+	/* по умолчанию */
+}
+
+body {
+	line-height: 1;
+}
+
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+	padding: 20px;
+}
+
+/* ------------------------------ */
+section h2 {
+	font-size: 45px;
+	text-align: center;
+	margin: 0px 0px 30px 0px;
+}
+
+.title {
+	font-size: 45px;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.boxshadowblock {
+	box-shadow: 1px 1px 15px red;
+	text-shadow: 2px 1px 10px green;
+	margin: 0px 0px 30px 0px;
+	padding: 25px;
+	font-size: 25px;
+}
+
+.boxshadowinline {
+	display: inline;
+	font-size: 25px;
+	box-shadow: 2px 3px 4px green;
+}
+
+.setka {
+	font-size: 0px;
+	max-width: 750px;
+	margin: 0 auto 50px;
+	box-shadow: 2px 2px 3px grey;
+
+}
+
+.setochka {
+	font-size: 25px;
+	display: inline-block;
+	max-width: 350px;
+	margin: 0 25px 0 0;
+	border-right: 10px dotted purple;
+	border-bottom: 3px solid red;
+	text-shadow: 3px 3px 3px yellow;
+	border-radius: 20%;
+}
+
+.setochka img {
+	max-width: 300px;
+	border-radius: 10%;
+}
+.pokrivalo{
+	height: 200px;
+	background-color: #000;
+	outline: 25px dotted grey;
+	opacity: .5;
+	margin: 0px 0px 80px 0px;
+}
+
+.pokril{
+	display: inline;
+	width: 100px;
+	height: 100px;
+	background-color: rgba(45, 18, 94, 0.582);
+	font-size: 25px;
+}
+.visibility{
+	font-size: 25px;
+	margin: 0px 0px 30px 0px;
+	visibility: hidden;
+}
+.work {
+	font-size: 25px;
+	margin: 0 0 30px 0;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+
+.circle {
+	width: 200px;
+	height: 200px;
+	background-color: green;
+	border-radius: 50%;
+	margin: 0 0 30px 0;
+}
+
+.opacity {
+	opacity: 50%;
+	margin: 0px 0px 30px 0px;
+}
+
+.span {
+	display: block;
+	font-size: 25px;
+	border: 1px solid black;
+	margin: 0 0 30px 0;
+}
+
+.border {
+	width: 300px;
+	height: 300px;
+	border-top: 8px solid red;
+	border-right: 10px dashed green;
+	border-bottom: 10px dotted purple;
+	border-left: 12px inset yellow;
+	background-color: rgb(40, 16, 180);
+	margin: 0px 0px 30px 0px;
+}
+
+.link {
+	font-size: 25px;
+	box-shadow: 3px 2px 10px green;
+	text-shadow: 2px 2px 2px;
+}
