@@ -1,0 +1,359 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('HelveticaNeueCyr-Light.woff2') format('woff2'),
+        url('HelveticaNeueCyr-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 16px;
+    /* по умолчанию */
+}
+
+body {
+    line-height: 1;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* ------------------------------ */
+
+
+.best {
+    margin: 0px 0px 80px 0px;
+}
+
+.bestcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.bestbox {
+    max-width: 375px;
+}
+
+.bestboxtitle {
+    color: #323232;
+    font-size: 42px;
+    line-height: 62px;
+    letter-spacing: 0.8px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bestboxtext {
+    color: #323232;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 20px 0px;
+}
+
+.bestboxtext p {
+    margin: 0px 0px 20px 0px;
+}
+
+.bestboxbutton {
+    display: inline-block;
+    background-color: #F78434;
+    border-radius: 29px;
+}
+
+.bestboxbutton a {
+    display: block;
+    padding: 18px 39px 18px 39px;
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =================================================================================== */
+
+.sale {
+    margin: 0px 0px 80px 0px;
+}
+
+.salecontainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.salebox {
+    box-shadow: 0px 40px 52px -22px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    padding: 40px 0px 40px 0;
+    max-width: 540px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.saleimage {
+    margin: 0px 0px 15px 0px;
+}
+
+.saletitle {
+    color: #323232;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 63px;
+    letter-spacing: 0.8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.saletext {
+    color: #323232;
+    line-height: 27px;
+    padding: 0px 88px 0px 88px;
+    letter-spacing: 1.15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 0px 25px 0px;
+}
+
+.salelink a {
+    line-height: 24px;
+    font-weight: 700;
+    color: #F78434;
+    padding: 18px 39px 18px 39px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* =================================================================================== */
+
+.news {
+    margin: 0px 0px 80px 0px;
+}
+
+.newscontainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsbox {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0px 29px 31px 29px;
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 1px 1px 10px black;
+}
+
+.newsboximage {
+    margin: 0px 0px 31px 0px;
+}
+
+.newsboximage img {}
+
+.newsboxtext {
+    color: #323232;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+    margin: 0px 0px 23px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.newsboxname {
+    color: #323232;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.6px;
+    margin: 0px 0px 1px 0px;
+}
+
+.newsboxcle {
+    font-family: "Poppins", sans-serif;
+    line-height: 27px;
+    letter-spacing: 1.15px;
+    color: #58BEBF;
+}
+
+/* ============================================================================= */
+
+
+.choose {
+    margin: 0px 0px 80px 0px;
+}
+
+.choosecontainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.choosebox {
+    max-width: 255px;
+    padding: 24px 24px 57px 24px;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+
+}
+
+.choosetitle {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: -0.275px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0px 0px 10px 0px;
+}
+
+.chooseline {
+    width: 56px;
+    height: 2px;
+    background: #34C759;
+    margin: 0px 0px 27px 0px;
+}
+
+.choosetext {
+    font-family: "HelveticaNeueCyr";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* ================================================================================ */
+
+.meal {
+    margin: 0px 0px 80px 0px;
+}
+
+.mealcontainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mealbox {
+    max-width: 350px;
+    margin: 0 auto;
+    background: #252525;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+}
+
+.mealimage {
+    margin: 0px 0px 29px 0px;
+}
+
+.mealtitle {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 30px;
+    color: #D9D9D9;
+    padding: 0px 30px 0px 30px;
+}
+
+.mealsubtitle {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: -0.15px;
+    color: #A4A8B2;
+    margin: 0px 0px 20px 0px;
+    padding: 0px 30px 0px 30px;
+}
+
+.mealtext {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: -0.1625px;
+    color: #85878C;
+    margin: 0px 0px 26px 0px;
+    padding: 0px 30px 0px 30px;
+}
+
+.mealboxsub {
+    text-align: center;
+    padding: 0px 24px 24px 0px;
+}
+
+.mealboxsubstar {
+    margin: 0px 41px 0px 0px;
+    display: inline-block;
+}
+
+.mealboxsuborder {
+    display: inline-block;
+    background: #262626;
+    border: 2px solid #303030;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.mealboxsuborder a {
+    font-family: "HelveticaNeueCyr";
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0px 32px 0px 32px;
+}
