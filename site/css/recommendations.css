@@ -1,0 +1,17 @@
+.wrapper__content{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.wrapper__box{
+    max-width: 400px;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.wrapper__box:not(:last-child){
+    margin: 0px 10px 0px 0px;
+}

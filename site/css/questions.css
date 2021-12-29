@@ -1,0 +1,33 @@
+.wrapper__content{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 5px 30px 5px;
+}
+
+.wrapper__content::after{
+    content: "";
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    background-color: purple;
+}
+
+.box-wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px;
+
+}
+
+.box-wrapper__question{
+    font-size: 16px;
+    padding: 5px;
+}
+
+.box-wrapper__answer{
+    font-size: 16px;
+    background-color: #8F7E6D;
+    border-radius: 10px;
+    padding: 5px;
+    color: #ffff;
+}
