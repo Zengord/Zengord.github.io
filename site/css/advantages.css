@@ -1,0 +1,29 @@
+.wrapper {}
+.wrapper__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 5px 30px 5px;
+}
+.wrapper__title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px 0px 30px 0px;
+}
+.wrapper__box {
+    max-width: 400px;
+    display: inline-block;
+    border: 1px solid grey;
+    vertical-align: top;
+    border-radius: 5px;
+}
+.wrapper__box:not(:last-child){
+    margin: 0px 40px 0px 0px;
+}
+.wrapper__subtitle {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0px 0px 20px 0px;
+}
+.wrapper__text {}
