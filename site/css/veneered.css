@@ -1,0 +1,16 @@
+.wrapper__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 5px 30px 5px;
+    background-color: #DEC79B;
+    border-radius: 20px;
+}
+.wrapper__title {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px 0px 40px 0px;
+}
+.wrapper__text:not(:last-child) {
+    margin: 0px 0px 20px 0px;
+}
