@@ -1,0 +1,556 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap);
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  min-width: 320px;
+}
+
+body {
+  color: #fff;
+  line-height: 1;
+  font-family: "Roboto";
+  font-size: 0.875rem;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+button,
+textarea {
+  font-family: "Roboto";
+  font-size: inherit;
+}
+
+button {
+  cursor: pointer;
+  color: inherit;
+  background-color: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.lock body {
+  overflow: hidden;
+  touch-action: none;
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.wrapper > main {
+  flex: 1 1 auto;
+}
+.wrapper > * {
+  min-width: 0;
+}
+
+/*
+(i) Стили будут применяться ко 
+всем классам содержащим *__container
+Например header__container, main__container и т.д.
+Снипет (HTML): cnt
+*/
+[class*=__container] {
+  max-width: 63.75rem;
+  box-sizing: content-box;
+  margin: 0 auto;
+  padding: 0 0.9375rem;
+}
+
+[class*=-ibg] {
+  position: relative;
+}
+[class*=-ibg] img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+
+[class*=-ibg_contain] img {
+  object-fit: contain;
+}
+
+.button {
+  padding: 9px 34px 9px 34px;
+  border-radius: 8px;
+  background-color: #F2726F;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  text-transform: uppercase;
+}
+
+.header__background {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: url("../img/dogs/screen-1/background-woman-dog.jpg") center/cover no-repeat;
+}
+@media (min-width: 65.625em) {
+  .header__background {
+    padding-bottom: 19.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .header__background {
+    padding-bottom: clamp( 6.25rem , 0.4417808219rem  +  29.0410958904vw , 19.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .header__background {
+    padding-bottom: 6.25rem;
+  }
+}
+.header__logo {
+  align-self: center;
+}
+.header__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 27px 0px;
+}
+.header__item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 49.4375em) {
+  .header__item {
+    padding-top: 20px;
+  }
+}
+.header__bottom {
+  margin-bottom: 126px;
+}
+@media (max-width: 38.5625em) {
+  .header__button {
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media (max-width: 25.375em) {
+  .header__button {
+    margin: 0px 0px 0px 0px;
+  }
+}
+@media (max-width: 24.6875em) {
+  .header__button {
+    margin: 20px 0px 0px 0px;
+  }
+}
+.header__title {
+  max-width: 583px;
+  font-weight: 900;
+  line-height: 1;
+}
+@media (min-width: 65.625em) {
+  .header__title {
+    font-size: 3.5rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .header__title {
+    font-size: clamp( 1.875rem , 1.1626712329rem  +  3.5616438356vw , 3.5rem );
+  }
+}
+@media (max-width: 20em) {
+  .header__title {
+    font-size: 1.875rem;
+  }
+}
+@media (min-width: 65.625em) {
+  .header__title {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .header__title {
+    margin-bottom: clamp( 1.5625rem , 0.9323630137rem  +  3.1506849315vw , 3rem );
+  }
+}
+@media (max-width: 20em) {
+  .header__title {
+    margin-bottom: 1.5625rem;
+  }
+}
+.header__link {
+  display: inline-block;
+}
+
+.menu {
+  padding: 10px 0px;
+}
+@media (max-width: 47.99875em) {
+  .menu__body {
+    position: fixed;
+    width: 100px;
+    height: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 3;
+  }
+  .menu-open .menu__body {
+    background-color: #5D62B5;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    color: #5D62B5;
+  }
+}
+.menu__list {
+  display: flex;
+}
+@media (max-width: 47.99875em) {
+  .menu__list {
+    flex-direction: column;
+  }
+}
+.menu__item:not(:last-child) {
+  margin-right: 37px;
+}
+.menu__item:first-child {
+  margin-right: 54px;
+}
+.menu__link {
+  font-weight: 700;
+  line-height: 157%;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+
+.time-work {
+  display: flex;
+  align-items: center;
+}
+.time-work__icon {
+  align-self: flex-start;
+  margin-right: 10px;
+}
+.time-work__time {
+  max-width: 172px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  margin: 0px 30px 0px 0px;
+}
+
+.us-call {
+  display: flex;
+  align-items: center;
+}
+.us-call__icon {
+  align-self: flex-start;
+  margin-right: 10px;
+}
+.us-call__phone {
+  max-width: 97px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  margin: 0px 30px 0px 0px;
+}
+
+.bottom-header {
+  display: flex;
+  padding: 10px 48px 10px 40px;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.bottom-header__items {
+  display: flex;
+}
+.bottom-header__item:not(:last-child) {
+  margin: 0px 37px 0px 0px;
+}
+.bottom-header__item:first-child {
+  margin: 0px 54px 0px 0px;
+}
+.bottom-header__link {
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #000000;
+}
+.bottom-header__icons {
+  display: flex;
+  align-items: center;
+}
+.bottom-header__icon:not(:last-child) {
+  margin-right: 22px;
+}
+.bottom-header__search:not(:last-child) {
+  margin-right: 22px;
+}
+.icon-menu {
+  display: none;
+}
+@media (max-width: 47.99875em) {
+  .icon-menu {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .icon-menu span, .icon-menu::before, .icon-menu::after {
+    content: "";
+    transition: all 0.3s ease 0s;
+    left: 0px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+  }
+  .icon-menu::before {
+    top: 0px;
+  }
+  .icon-menu::after {
+    bottom: 0px;
+  }
+  .icon-menu span {
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu span {
+    transform: scale(0);
+  }
+  .menu-open .icon-menu::before {
+    transform: rotate(-45deg);
+    top: calc(50% - 1px);
+  }
+  .menu-open .icon-menu::after {
+    transform: rotate(45deg);
+    bottom: calc(50% - 1px);
+  }
+}
+
+.who-we {
+  padding-bottom: 24px;
+}
+.who-we__test {
+  background-color: #F5F5F5;
+}
+.who-we__items {
+  position: relative;
+  bottom: 80px;
+  background: #5D62B5 url(../img/dogs/screen-2/blot.png) 0 146% no-repeat;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 65.625em) {
+  .who-we__items {
+    padding-top: 6.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .who-we__items {
+    padding-top: clamp( 1.875rem , -0.0428082192rem  +  9.5890410959vw , 6.25rem );
+  }
+}
+@media (max-width: 20em) {
+  .who-we__items {
+    padding-top: 1.875rem;
+  }
+}
+.who-we__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.15px;
+  color: #F5F5F5;
+}
+@media (min-width: 65.625em) {
+  .who-we__text {
+    padding-left: 5.4375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .who-we__text {
+    padding-left: clamp( 0.625rem , -1.4845890411rem  +  10.5479452055vw , 5.4375rem );
+  }
+}
+@media (max-width: 20em) {
+  .who-we__text {
+    padding-left: 0.625rem;
+  }
+}
+@media (min-width: 65.625em) {
+  .who-we__text {
+    padding-right: 5.4375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .who-we__text {
+    padding-right: clamp( 0.625rem , -1.4845890411rem  +  10.5479452055vw , 5.4375rem );
+  }
+}
+@media (max-width: 20em) {
+  .who-we__text {
+    padding-right: 0.625rem;
+  }
+}
+.who-we__image {
+  display: block;
+  position: relative;
+  align-self: center;
+}
+@media (min-width: 65.625em) {
+  .who-we__image {
+    top: 7.5625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .who-we__image {
+    top: clamp( 2.8125rem , 0.7303082192rem  +  10.4109589041vw , 7.5625rem );
+  }
+}
+@media (max-width: 20em) {
+  .who-we__image {
+    top: 2.8125rem;
+  }
+}
+.who-we__picture {
+  width: 100%;
+}
+
+.titles__subtitle {
+  position: relative;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: #F5F5F5;
+  margin: 0px 0px 33px 0px;
+}
+@media (min-width: 65.625em) {
+  .titles__subtitle {
+    padding-left: 7.625rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .titles__subtitle {
+    padding-left: clamp( 1.875rem , -0.6455479452rem  +  12.602739726vw , 7.625rem );
+  }
+}
+@media (max-width: 20em) {
+  .titles__subtitle {
+    padding-left: 1.875rem;
+  }
+}
+.titles__subtitle::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 28px;
+  height: 27px;
+  top: -2px;
+  background: url(../img/dogs/screen-2/white-mark.svg) 0 0 no-repeat;
+}
+@media (min-width: 65.625em) {
+  .titles__subtitle::before {
+    left: 5.75rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .titles__subtitle::before {
+    left: clamp( 0.4375rem , -1.8912671233rem  +  11.6438356164vw , 5.75rem );
+  }
+}
+@media (max-width: 20em) {
+  .titles__subtitle::before {
+    left: 0.4375rem;
+  }
+}
+.titles__title {
+  max-width: 583px;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.17;
+  margin: 0px 0px 36px 0px;
+  padding-left: 87px;
+}
+@media (min-width: 65.625em) {
+  .titles__title {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .titles__title {
+    font-size: clamp( 1.25rem , 0.8116438356rem  +  2.1917808219vw , 2.25rem );
+  }
+}
+@media (max-width: 20em) {
+  .titles__title {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 65.625em) {
+  .titles__title {
+    padding-left: 5.4375rem;
+  }
+}
+@media (min-width: 20em) and (max-width: 65.625em) {
+  .titles__title {
+    padding-left: clamp( 0.625rem , -1.4845890411rem  +  10.5479452055vw , 5.4375rem );
+  }
+}
+@media (max-width: 20em) {
+  .titles__title {
+    padding-left: 0.625rem;
+  }
+}
