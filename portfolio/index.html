@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20220425165029">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Play:wght@700&display=swap&_v=20220425165029" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+			</div>
+		</header>
+		<main class="page">
+			<div class="info">
+				<div class="info__container">
+					<div class="info__items">
+						<div class="info__logo"><img src="img/logo.svg" alt="Логотип"></div>
+						<div class="info__title">Портфолио - работы</div>
+					</div>
+
+					<button class="info__certificates" data-popup=".popup">Сертификаты</button>
+
+					<div class="info__catalog catalog-info">
+						<div class="catalog-info__items">
+							<a href="https://zengord.github.io/nutritionist/" target="_blank" class="catalog-info__image">
+								<picture><source srcset="img/main/nutritionology.webp" type="image/webp"><img src="img/main/nutritionology.jpg" alt="Изображение сайта нутрициологии"></picture>
+							</a>
+							<a href="https://zengord.github.io/nutritionist/" target="_blank" class="catalog-info__title">Нутрициология</a>
+						</div>
+						<div class="catalog-info__items">
+							<a href="https://zengord.github.io/house-best-food/" target="_blank" class="catalog-info__image">
+								<picture><source srcset="img/main/restaurant.webp" type="image/webp"><img src="img/main/restaurant.jpg" alt="Изображение сайта ресторана - дом лучшей еды"></picture>
+							</a>
+							<a href="https://zengord.github.io/house-best-food/" target="_blank" class="catalog-info__title">Ресторан - дом лучшей еды</a>
+						</div>
+						<div class="catalog-info__items">
+							<a href="https://zengord.github.io/audit-firm/" target="_blank" class="catalog-info__image">
+								<picture><source srcset="img/main/audit-firm.webp" type="image/webp"><img src="img/main/audit-firm.jpg" alt="Изображение сайта аудиторской фирмы"></picture>
+							</a>
+							<a href="https://zengord.github.io/audit-firm/" target="_blank" class="catalog-info__title">Аудиторская фирма</a>
+						</div>
+						<div class="catalog-info__items">
+							<a href="https://zengord.github.io/creative-thinker/" target="_blank" class="catalog-info__image">
+								<picture><source srcset="img/main/minimalism.webp" type="image/webp"><img src="img/main/minimalism.jpg" alt="Изображение сайта аудиторской фирмы"></picture>
+							</a>
+							<a href="https://zengord.github.io/creative-thinker/" target="_blank" class="catalog-info__title">Креативный мыслитель</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				© 2022 Хамидуллин Динар
+			</div>
+		</footer>
+	</div>
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">Закрыть</button>
+				<div class="popup__items items-popup gallery" data-gallery>
+					<a href="img/certificates/сертификат-1.png" class="items-popup__image">
+						<picture><source srcset="img/certificates/сертификат-1.webp" type="image/webp"><img src="img/certificates/сертификат-1.png" alt="Сертификат"></picture>
+					</a>
+					<a href="img/certificates/сертификат-2.png" class="items-popup__image">
+						<picture><source srcset="img/certificates/сертификат-2.webp" type="image/webp"><img src="img/certificates/сертификат-2.png" alt="Сертификат"></picture>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20220425165029"></script>
+</body>
+
+</html>
