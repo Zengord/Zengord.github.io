@@ -10,7 +10,7 @@
 			opacity: 0;
 		}
 	</style>
-	<link rel="stylesheet" href="css/style.min.css?_v=20220422002447">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220531153615">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +21,10 @@
 		<header class="header">
 			<div class="header__container">
 				<div class="header__items">
-					<div href="index.html" class="header__logo">
-						<a href="index.html"><picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="логотип"></picture></a>
+					<div class="header__logo">
+						<a href="index.html">
+							<picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="логотип"></picture>
+						</a>
 					</div>
 					<div class="header__menu menu">
 						<nav class="menu__body">
@@ -68,9 +70,9 @@
 								<div class="card-aboutus__image">
 									<picture><source srcset="img/icons/icon-card.webp" type="image/webp"><img src="img/icons/icon-card.png" alt="иконка"></picture>
 								</div>
-								<div class="card-aboutus__title">
+								<h4 class="card-aboutus__title">
 									Магическая <span>Атмосфера</span>
-								</div>
+								</h4>
 								<div class="card-aboutus__text">
 									В нашем заведении царит магическая атмосфера
 									наполненная вкусными ароматами
@@ -82,9 +84,9 @@
 								<div class="card-aboutus__image">
 									<picture><source srcset="img/icons/icon-card.webp" type="image/webp"><img src="img/icons/icon-card.png" alt="иконка"></picture>
 								</div>
-								<div class="card-aboutus__title">
+								<h4 class="card-aboutus__title">
 									Лучшее качество <span>Еды</span>
-								</div>
+								</h4>
 								<div class="card-aboutus__text">
 									Качество нашей
 									Еды - отменное!
@@ -96,9 +98,9 @@
 								<div class="card-aboutus__image">
 									<picture><source srcset="img/icons/icon-card.webp" type="image/webp"><img src="img/icons/icon-card.png" alt="иконка"></picture>
 								</div>
-								<div class="card-aboutus__title">
+								<h4 class="card-aboutus__title">
 									Недорогая <span>Еда</span>
-								</div>
+								</h4>
 								<div class="card-aboutus__text">
 									Стоимость нашей Еды
 									зависит только от ее
@@ -174,14 +176,14 @@
 							</div>
 							<div class="culinart-dishes__description" data-da=".culinart-dishes__subimage,767.98">
 								<div class="culinart-dishes__text">Гамбургер мини <object type="image/svg+xml" data="picture.svg">
-										<img src="img/doted.svg"> </object> <span>
+										<img src="img/doted.svg" alt="точки"> </object> <span>
 										220 ₽
 									</span></div>
 								<div class="culinart-dishes__text">Гамбургер мини <object type="image/svg+xml" data="picture.svg">
-										<img src="img/doted.svg"> </object> <span>220
+										<img src="img/doted.svg" alt="точки"> </object> <span>220
 										₽</span></div>
 								<div class="culinart-dishes__text">Гамбургер мини <object type="image/svg+xml" data="picture.svg">
-										<img src="img/doted.svg"> </object> <span>220
+										<img src="img/doted.svg" alt="точки"> </object> <span>220
 										₽</span></div>
 							</div>
 						</div>
@@ -228,13 +230,10 @@
 					</div>
 				</div>
 			</section>
-			<section class="reviews">
+			<div class="reviews">
 				<div class="reviews__container">
-					<!-- Оболочка слайдера -->
 					<div class="reviews__slider swiper">
-						<!-- Двигающееся часть слайдера -->
 						<div class="reviews__wrapper swiper-wrapper">
-							<!-- Слайд -->
 							<div class="reviews__slide swiper-slide">
 								<div class="reviews__text">
 									Я надолго запомню мой День рождения, проведённый в этом ресторане! Кусочек родной Армении!!!
@@ -284,17 +283,16 @@
 								</div>
 							</div>
 						</div>
-						<!-- Если нужна пагинация -->
 						<div class="swiper-pagination"> </div>
 					</div>
 
 				</div>
-			</section>
+			</div>
 			<section class="gallery">
 				<div class="gallery__container">
-					<div class="gallery__title title">
+					<h2 class="gallery__title title">
 						Галерея <span>Блюд</span>
-					</div>
+					</h2>
 					<div data-gallery class="gallery__items">
 						<a href="img/gallery/big-image.jpg" class="gallery__image-big">
 							<picture><source srcset="img/gallery/big-image.webp" type="image/webp"><img src="img/gallery/big-image.jpg" alt="Большая картинка"></picture>
@@ -325,9 +323,9 @@
 
 			<section class="our-chefs">
 				<div class="our-chefs__container">
-					<div class="our-chefs__title title">
+					<h2 class="our-chefs__title title">
 						Наши <span>Повара</span>
-					</div>
+					</h2>
 					<div class="our-chefs__images">
 						<div class="our-chefs__image">
 							<picture><source srcset="img/chefs/one-chef.webp" type="image/webp"><img src="img/chefs/one-chef.jpg" alt="Повар, девушка"></picture>
@@ -342,28 +340,12 @@
 				</div>
 			</section>
 
-			<section class="end">
+			<div class="end">
 				<div class="end__fullscreen"></div>
-			</section>
+			</div>
 		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
 	</div>
-	<!-- 
-<div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
-			</div>
-		</div>
-	</div>
-</div>
- -->
-
-	<script src="js/app.min.js?_v=20220422002447"></script>
+	<script src="js/app.min.js?_v=20220531153615"></script>
 </body>
 
 </html>
