@@ -816,6 +816,12 @@ body {
   }
 }
 
+@media (max-width: 35.625em) {
+  .type-of-delivery__title {
+    max-width: 17.4375rem;
+  }
+}
+
 @media (max-width: 31.25em) {
   .type-of-delivery__button {
     -ms-flex-item-align: start;
