@@ -83,13 +83,6 @@ HTML5, CSS3, SCSS, JavaScript, BEM, Gulp/Webpack, Swiper, Git, GitHub Pages
 **Live Demo:** https://zengord.github.io/nutritionist/  
 **Code:** https://github.com/Zengord/nutritionist
 
-### Todo List
-
-Небольшое приложение на JavaScript для управления задачами с сохранением данных в localStorage.
-
-**Live Demo:** https://zengord.github.io/Todo-List/  
-**Code:** https://github.com/Zengord/Todo-List
-
 ## О проектах
 
 Это самостоятельные pet-проекты, сверстанные по готовым макетам. Они показывают навыки адаптивной верстки, работы с JavaScript-интерактивом, организации многостраничных сайтов и публикации проектов на GitHub Pages.
